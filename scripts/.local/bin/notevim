@@ -1,0 +1,9 @@
+#!/usr/bin/fish
+
+if test (count $argv) -eq 0
+  set cmd "cd ~/vault/; set -lx NVIM_APPNAME notevim; nvim ./projects.md"
+else
+  set cmd "set -lx NVIM_APPNAME notevim; nvim $argv"
+end
+
+kitty -o modify_font="cell_height +10px" fish -c "$cmd"
