@@ -20,7 +20,7 @@ managed with stow
 ### Instructions:
 **\[tmux]**
 download tpm:
-> git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+> git clone https://github.com/tmux-plugins/tpm ~/.local/share/tmux/plugins/tpm
 
 **\[fish]**
 download starship:
