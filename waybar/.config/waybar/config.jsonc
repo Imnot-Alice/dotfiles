@@ -1,0 +1,38 @@
+{ 
+  "height": 30,
+  "spacing": 4,
+  "modules-left": [
+  "niri/workspaces",
+  ],
+  "modules-center": [
+    "clock",
+  ],
+  "modules-right": [
+    "niri/language",
+    "bluetooth",
+  ],
+  "niri/workspaces": {
+    "all-outputs": false,
+  },
+  "clock": {
+    "format": "<big>{:%T}</big>",
+    "interval": 1,
+    "tooltip": true,
+    "tooltip-format": "{:%a %d/%m-%y v.%V}",
+    //"</big>\n<tt><small>{0:%a %d/%m-%y v.%V}</small></tt>"
+    "justify": "center",
+  },
+  //"battery": {
+  //}, 
+  "niri/language": {
+    "format": "󰌓 {}",
+    "format-en": "us",
+    "format-se": "se",
+  },
+  "bluetooth": {
+   "format": "󰂯{status}"
+   "format-connected": "󰋋 {device_battery_percentage}",
+   "tooltip-format-connected": "{device_enumerate}",
+   "tooltip-format-enumerate-connected": "{device_alias} {status}"
+  },
+}

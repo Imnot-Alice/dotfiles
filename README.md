@@ -26,6 +26,9 @@ download tpm:
 download starship:
 > curl -sS https://starship.rs/install.sh | sh
 
+**\[nvim]**
+> sudo pacman -S tree-sitter-cli
+    
 ### improvments:
 **\[notevim]**
 no web preview, maybe hugo

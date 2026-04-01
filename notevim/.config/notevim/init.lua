@@ -34,11 +34,6 @@ vim.o.wrap = false
 vim.o.swapfile = false
 vim.o.signcolumn = "yes"
 
-vim.o.tabstop = 2
-vim.o.expandtab = true
-vim.o.softtabstop = 2
-vim.o.shiftwidth = 2
-
 vim.o.laststatus = 0      -- disable bottom statusline
 
 vim.o.winbar = "%{%v:lua.VaultFilename()%}"
@@ -197,3 +192,9 @@ local autoCommands = {
 }
 
 M.nvim_create_augroups(autoCommands)
+
+vim.opt.number = true
+vim.o.tabstop = 2
+vim.o.expandtab = true
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
